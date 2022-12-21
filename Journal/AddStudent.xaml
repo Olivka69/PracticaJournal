@@ -1,0 +1,41 @@
+﻿<Page x:Class="Journal.AddStudent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Journal"
+      mc:Ignorable="d"
+      Title="AddStudent" Height="680.6" Width="720.8">
+
+    <Grid Background="#F8F8FF" Margin="0,0,-0.2,-0.2" >
+
+        <Button x:Name="btn_back" Style="{StaticResource St1}" Content="Назад" HorizontalAlignment="Left" Margin="243,599,0,0" VerticalAlignment="Top" Width="240" RenderTransformOrigin="0.331,3.88" Height="41" Click="btn_back_Click"/>
+        <Button x:Name="btn_add" Style="{StaticResource St7}" Content="Добавить ученика" HorizontalAlignment="Left" Margin="243,318,0,0" VerticalAlignment="Top" Width="240" RenderTransformOrigin="0.331,3.88" Height="41" Click="btn_add_Click"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="40,102,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="80"/>
+        <Label x:Name="lb_st" Style="{StaticResource St2}" Content="Форма для добавления нового ученика" HorizontalAlignment="Left" Margin="159,39,0,0" VerticalAlignment="Top" Width="408" Height="38"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="40,140,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="80"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="40,178,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="80"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="40,218,0,0" TextWrapping="Wrap" Text="Дата Рождения" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="119"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="40,259,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="131"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="403,102,0,0" TextWrapping="Wrap" Text="Номер паспорта" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="131"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="403,140,0,0" TextWrapping="Wrap" Text="Кем выдан" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="116"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="403,180,0,0" TextWrapping="Wrap" Text="СНИЛС" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="36" Width="80"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="403,216,0,0" TextWrapping="Wrap" Text="ИНН" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="80"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="403,259,0,0" TextWrapping="Wrap" Text="Номер аттестата" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="38" Width="131"/>
+        <TextBox x:Name="tbx_st_fname" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="40" Margin="202,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="tbx_st_name" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="38" Margin="202,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" RenderTransformOrigin="1.177,0.479"/>
+        <TextBox x:Name="tbx_st_lname" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="40" Margin="202,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="tbx_dr" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="40" Margin="202,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="tbx_pasport" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="40" Margin="543,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.473,0.605"/>
+        <TextBox x:Name="tbx_st_phone" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="41" Margin="202,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="tbx_attectat" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="43" Margin="543,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="tbx_inn" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="38" Margin="543,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.478,0.526"/>
+        <TextBox x:Name="tbx_numpas" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="42" Margin="543,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" RenderTransformOrigin="-0.692,-0.739"/>
+        <TextBox x:Name="tbx_snils" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="38" Margin="543,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBlock Style="{StaticResource St3}" HorizontalAlignment="Left" Margin="52,419,0,0" TextWrapping="Wrap" Text="Класс" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="43" Width="119"/>
+        <TextBox x:Name="tbx_classid" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="43" Margin="202,419,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" RenderTransformOrigin="-1.939,-0.632"/>
+        <Button x:Name="btn_addklass" Style="{StaticResource St7}" Content="Добавить в класс" HorizontalAlignment="Left" Margin="243,502,0,0" VerticalAlignment="Top" Width="240" Height="41" RenderTransformOrigin="0.415,0.57" Click="Button_Click"/>
+        <TextBlock Style="{StaticResource St6}" HorizontalAlignment="Left" Margin="403,419,0,0" TextWrapping="Wrap" Text="Номер ученика" VerticalAlignment="Top" RenderTransformOrigin="-0.851,-4.25" Height="43" Width="131"/>
+        <TextBox x:Name="tbx_studentid" Style="{StaticResource St4}" HorizontalAlignment="Left" Height="43" Margin="543,419,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+    </Grid>
+</Page>
